@@ -1,0 +1,239 @@
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #bb9864;
+}
+
+body {
+  background-color: #edeceb;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  padding: 0 10px;
+}
+
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header ul li {
+  margin-left: 20px;
+}
+
+.header ul li:first-child {
+  margin-left: 0;
+}
+
+.title {
+  font-family: Helvetica, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+}
+
+.divtitle,
+.divtitle-port,
+.divtitle-abt {
+  color: #3b3e32;
+  clear: both;
+}
+
+.divtitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.divtitle-port,
+.divtitle-abt {
+  display: relative;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.divsub {
+  margin-top: 2em;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  font-family: 'Courier New', Courier, monospace;
+  color: #3b3e32;
+  font-weight: bold;
+  background-color: white;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .col-md-6 {
+  text-align: center;
+}
+
+.footer .btn {
+  margin: 0 10px;
+}
+
+.aboutme {
+  display: grid;
+}
+
+.skills,
+.lang,
+.soft,
+.qual,
+.awards,
+.intern {
+  align-items: center;
+  justify-items: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.skills,
+.qual,
+.awards,
+.intern {
+  display: grid;
+}
+
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #3b3e32;
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+.lang-list,
+.soft-list {
+  display: flex;
+  justify-content: center;
+  align-content: space-evenly;
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .7em;
+  font-weight: bold;
+}
+
+.lang-item,
+.soft-item {
+  margin: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.progress {
+  height: 10px;
+  background-color: #f2f2f2;
+  margin: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #c4b9ad;
+}
+
+.intern {
+  margin-bottom: 100px;
+}
+
+.qual p,
+.awards p,
+.intern p {
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .85em;
+}
+
+@media screen and (max-width: 768px) {
+  .divtitle {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .lang-item,
+  .soft-item {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header nav {
+    justify-content: center;
+  }
+
+  .header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header ul li {
+    margin: 10px 0;
+  }
+
+  .divtitle {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .lang-item,
+  .soft-item {
+    width: 80px;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .qual p,
+  .awards p,
+  .intern p {
+    font-size: .7em;
+  }
+}
